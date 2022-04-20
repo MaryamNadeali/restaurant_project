@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container ">
+        <div class="row d-flex">
+            <div class="col-md-4 d-flex mt-5 mb-5" style="padding-left: 0px;  padding-right: 0px;">
+                <img src="{{food.photo.url}}" class="img-responsive mt-5">
+            </div>
+            <div class="col-md-8 mt-5 mb-5 d-flex align-items-start justify-content-end " >
+                <ul class="text-black fs-4 pt-5 align-items-center mt-3 text-end">
+                    <li class="fw-bold">{{food.name}}</li>
+                    <li>توضیحات: {{food.description}}</li>
+                    <li >مدت زمان پخت: {{food.time}}</li>
+                    <li>امتیاز: {{food.rate}}</li>
+                    <li >قیمت: {{food.price}}</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+
+        
